@@ -178,7 +178,7 @@
 					<control type="label">
 						<top>120</top>
 						<right>160</right>
-						<width>150</width>
+						<width>250</width>
 						<height>90</height>
 						<font>font25</font>
 						<align>center</align>
