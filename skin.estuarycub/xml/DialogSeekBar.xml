@@ -136,7 +136,7 @@
 					</control>
 				</control>
 				<control type="group">
-					<visible>Player.ShowInfo + String.IsEqual(MusicPlayer.Codec,mp3) + Player.HasAudio</visible>
+					<visible>Player.ShowInfo + String.IsEqual(MusicPlayer.Codec,mp3float) + Player.HasAudio</visible>
 					<control type="image">
 						<right>20</right>
 						<top>90</top>
@@ -171,18 +171,6 @@
 						<font>font25</font>
 						<align>center</align>
 						<label>$INFO[musicplayer.BitRate,, kbps]</label>
-					</control>
-				</control>
-				<control type="group">
-					<visible>Player.ShowInfo + Player.HasAudio</visible>
-					<control type="label">
-						<top>120</top>
-						<right>160</right>
-						<width>250</width>
-						<height>90</height>
-						<font>font25</font>
-						<align>center</align>
-						<label>$INFO[musicplayer.Codec,, kbps]</label>
 					</control>
 				</control>
 				<control type="image">
