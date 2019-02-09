@@ -136,6 +136,52 @@
 					</control>
 				</control>
 				<control type="group">
+					<visible>Player.ShowInfo + String.IsEqual(MusicPlayer.Codec,mp3) + Player.HasAudio</visible>
+					<control type="image">
+						<right>20</right>
+						<top>90</top>
+						<width>130</width>
+						<texture>flags/audiocodec/cmp3.png</texture>
+						<aspectratio>keep</aspectratio>
+					</control>
+					<control type="label">
+						<top>120</top>
+						<right>160</right>
+						<width>150</width>
+						<height>90</height>
+						<font>font25</font>
+						<align>center</align>
+						<label>$INFO[musicplayer.BitRate,, kbps]</label>
+					</control>
+				</control>
+				<control type="group">
+					<visible>Player.ShowInfo + String.IsEqual(MusicPlayer.Codec,aac) + Player.HasAudio</visible>
+					<control type="image">
+						<right>20</right>
+						<top>90</top>
+						<width>130</width>
+						<texture>flags/audiocodec/caac.png</texture>
+						<aspectratio>keep</aspectratio>
+					</control>
+					<control type="label">
+						<top>120</top>
+						<right>160</right>
+						<width>150</width>
+						<height>90</height>
+						<font>font25</font>
+						<align>center</align>
+						<label>$INFO[musicplayer.BitRate,, kbps]</label>
+					</control>
+				</control>
+				<control type="image">
+					<right>20</right>
+					<top>90</top>
+					<width>130</width>
+					<texture>flags/audiocodec/cflac.png</texture>
+					<aspectratio>keep</aspectratio>
+					<visible>Player.ShowInfo + String.IsEqual(MusicPlayer.Codec,flac) + Player.HasAudio</visible>
+				</control>
+				<control type="group">
 					<visible>PVR.IsRecordingPlayingChannel + !Player.ChannelPreviewActive</visible>
 					<control type="image">
 						<top>100</top>
