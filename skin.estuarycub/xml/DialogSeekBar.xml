@@ -116,6 +116,26 @@
 					</include>
 				</control>
 				<control type="group">
+					<visible>Player.ShowInfo + Integer.IsEqual(musicplayer.bitspersample,24) + Player.HasAudio</visible>
+					<control type="image">
+						<right>320</right>
+						<top>90</top>
+						<width>90</width>
+						<texture>flags/audiocodec/hires.png</texture>
+						<aspectratio>keep</aspectratio>
+					</control>
+					<control type="label">
+						<top>95</top>
+						<right>160</right>
+						<width>150</width>
+						<height>90</height>
+						<font>font25</font>
+						<align>center</align>
+						<textcolor>gold</textcolor>
+						<label>$INFO[musicplayer.Samplerate,,kHz[CR]]$INFO[musicplayer.bitspersample]</label>
+					</control>
+				</control>
+				<control type="group">
 					<visible>PVR.IsRecordingPlayingChannel + !Player.ChannelPreviewActive</visible>
 					<control type="image">
 						<top>100</top>
