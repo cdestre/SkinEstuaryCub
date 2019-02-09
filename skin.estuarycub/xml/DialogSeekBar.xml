@@ -136,7 +136,7 @@
 					</control>
 				</control>
 				<control type="group">
-					<visible>Player.ShowInfo + String.IsEqual(MusicPlayer.Codec,mp3float) + Player.HasAudio</visible>
+					<visible>Player.ShowInfo + String.Contains(MusicPlayer.Codec,mp3) + Player.HasAudio</visible>
 					<control type="image">
 						<right>20</right>
 						<top>90</top>
