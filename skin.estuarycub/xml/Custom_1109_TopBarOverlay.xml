@@ -80,9 +80,11 @@
 				</control>
 				<control type="label">
 					<top>60</top>
-					<label>$VAR[OSDSubLabelVar]</label>
+					<label>$LOCALIZE[19031]: $INFO[MusicPlayer.offset(1).Artist,, - ]$INFO[MusicPlayer.offset(1).Title]</label>
 					<shadowcolor>text_shadow</shadowcolor>
+					<visible>MusicPlayer.HasNext</visible>
 					<height>100</height>
+					<width>1700</width>
 					<left>0</left>
 					<right>0</right>
 				</control>
