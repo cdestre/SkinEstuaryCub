@@ -42,6 +42,26 @@
 					<visible>Player.HasAudio</visible>
 				</control>
 				<control type="label">
+					<top>90</top>
+					<left>30</left>
+					<width>770</width>
+					<height>40</height>
+					<label>$INFO[MusicPlayer.Artist]</label>
+					<font>font37</font>
+					<scroll>true</scroll>
+					<visible>Player.HasAudio</visible>
+				</control>
+				<control type="label">
+					<top>130</top>
+					<left>30</left>
+					<width>770</width>
+					<height>40</height>
+					<label>$INFO[MusicPlayer.Album]</label>
+					<font>font27</font>
+					<scroll>true</scroll>
+					<visible>Player.HasAudio</visible>
+				</control>
+				<control type="label">
 					<top>110</top>
 					<left>20</left>
 					<width>400</width>
